@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+/* *COMMON CSS STARTS */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,ol,ul,p,span{
+    margin: 0 ;
+    padding: 0 ;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+:root{
+    --primary_color:#02918c;
+    --sec_color: #cfc91d;
+}
+.btn a{
+    color: #000;
+    background-color: var(--sec_color);
+    font-weight: 800;
+    padding: 20px 45px;
+    transition: .35s;
+}
+.btn a:hover{
+    background-color: #a29d13;
+    box-shadow: 3px 3px 10px #1e1d1d92;
+}
+.hedding{
+    text-align: center;
+}
+.hedding h1{
+    font-size: 46px;
+    font-weight: 800;
+    color: var(--primary_color);
+}
+.hedding span{
+    display: block;
+    color: #7e8287;
+    margin: 30px 0;
+}
+/* *COMMON CSS ENDS */
+
+/* *navbar STARTS */
+nav{
+    background-color: var(--primary_color);
+    padding: 20px 0 !important; 
+}
+nav .border-less{
+    border: none;
+}
+nav .border-less:focus{
+    box-shadow: none;
+}
+nav .menu ul li a{
+    color: #fff ; 
+    font-weight: 800;
+    font-size: 12px;
+    padding: 0 25px !important;
+}
+nav .menu ul li:hover a{
+    color: var(--sec_color);
+}
+nav .container a{
+    padding: 0;
+}
+/* *navbar ends */
+
+/* *banner stars */
+.banner{
+    background-image: url(../images/home_1.png);
+    background-color: rgba(0, 0, 0, .66);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 728px;
+    color: #fff;
+    text-align: center;
+}
+.banner .container .row,
+.banner .container {
+    height: 100%;
+}
+.banner h4{
+    font-size: 30px;
+}
+.banner h1{
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    font-weight: 800;
+}
+.banner p{
+    font-size: 18px;
+}
+.banner span img{
+    margin: 50px 0;
+}
+/* *banner ends */
+
+/* *about_me starts */
+.about_me{
+    padding: 100px 0;
+    text-align: center;
+}
+.about_me .about_paragraph p{
+    color: #7e8287;
+    line-height: 30px;
+    margin: 0 100px 100px 100px;
+}
+.about_me .about_paragraph p span{
+    font-size: 23px;
+    font-weight: 800;
+}
+.about_me .about_card{
+    padding: 30px 0;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+    border-right: 1px solid #d9dbdb;
+}
+.about_me .about_card:last-child{
+    border: none;
+}
+.about_me .about_card span{
+    font-size: 30px;
+    color: var(--primary_color);
+}
+.about_me .about_card .card_ctn{
+    color: #7e8287;
+    padding: 0;
+    margin:0 60px;
+}
+.about_me .about_card .card_ctn h5{
+    font-size: 16px;
+    font-weight: 800;
+    margin: 30px 0;
+}
+.about_me .about_card .card_ctn p{
+    font-size: 11px;
+    line-height: 20px;
+}
+/* *about_me ends */
+
+/* *services starts */
+.services{
+    background-image: url(../images/servies.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 70px 0px;
+}
+.services .left .hedding{
+    text-align: left;
+}
+.services .left p{
+    color: #7e8287;
+    margin-bottom: 60px;
+}
+.services .left .services_card{
+    background-color: transparent;
+    border: none;
+}
+.services .services_card span{
+    font-size: 30px;
+    color: var(--primary_color);
+}
+.services .services_card .card_ctn{
+    color: #7e8287;
+    padding: 0 100px 0px 0px;
+}
+.services .services_card .card_ctn h5{
+    font-size: 16px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+.services .services_card .card_ctn p{
+    font-size: 11px;
+    line-height: 20px;
+}
+/* *services ends */
+
+/* *my_work starts */
+    .my_work{
+        padding: 100px 0;
+    }
+    .my_work p{
+        margin: 0 230px 80px 230px;
+        text-align: center;
+        color: #7e8287;
+    }
+    .my_work .work_card {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+    }
+    .my_work .work_card img{
+        width: 100%;
+        height: 100%;
+    }
+    .my_work .work_card .overflow{
+        position: absolute;
+        inset: 20px;
+        opacity: .85;
+        background-color: var(--primary_color);
+        color: #fff;
+        text-align: center;
+        transition: .35s;
+        transform: scale(0);
+    }
+    .my_work .work_card:hover .overflow{
+        transform: scale(1);
+    }
+    .my_work .work_card .overflow p{
+        font-size: 13px;
+        margin: 0 20px;
+        color: #fff;
+    }
+    .my_work .work_card .overflow h4{
+        font-size: 16px;
+        font-weight: 800;
+    }
+/* *my_work ends */
